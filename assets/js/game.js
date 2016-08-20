@@ -79,7 +79,7 @@ var HANGMAN = function() {
                 if (already_guessed){
                     if (tries == 0) {
                         alert("You Lose! The word was " + names[index]);
-                        game.innerHTML = names[index];
+                        //game.innerHTML = names[index];
                         var losses = document.getElementById('losses').nodeValue;
                         document.getElementById('losses').innerHTML = losses + 1;
                         reset_game();
@@ -93,7 +93,7 @@ var HANGMAN = function() {
                     tries--;
                 if (tries == 0) {
                         alert("You Lose! The word was " + names[index]);
-                        game.innerHTML = names[index];
+                        //game.innerHTML = names[index];
                         var losses = document.getElementById('losses').nodeValue;
                         document.getElementById('losses').innerHTML = losses + 1;
                         reset_game();
@@ -103,8 +103,8 @@ var HANGMAN = function() {
             }
             
             var reset_game = function() {
-                game_guesses.innerHTML = "";
-                game_tries.innerHTML = "";
+                game_guesses.innerHTML = " ";
+                game_tries.innerHTML = " ";
                 HANGMAN();
             }
             
